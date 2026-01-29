@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitPro Visualizer | Advanced Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="blob-bg"></div>
+
+    <nav class="glass-nav">
+        <div class="logo"><i class="fab fa-github"></i> Git<span>Pro</span></div>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('analyzer')">Analyzer</button>
+            <button class="tab-btn" onclick="switchTab('compare')">Comparison</button>
+        </div>
+    </nav>
+
+    <main id="app-container">
+        <section id="analyzer-sec" class="active">
+            <div class="hero-search glass">
+                <h1>Analyze GitHub Identity</h1>
+                <p>Get deep insights into contributions, repositories, and influence.</p>
+                <div class="input-wrapper">
+                    <input type="text" id="targetUser" placeholder="Enter GitHub username (e.g. naemazam)">
+                    <button onclick="performFullAnalysis()"><i class="fas fa-bolt"></i> Analyze</button>
+                </div>
+            </div>
+
+            <div id="report-card" class="report-area" style="display:none;">
+                <div class="profile-grid">
+                    <div class="glass card profile-main">
+                        <img id="avatar" src="" alt="Avatar">
+                        <h2 id="fullName">Name</h2>
+                        <p id="bio">Bio goes here...</p>
+                        <div class="badges" id="badges"></div>
+                    </div>
+
+                    <div class="glass card stats-box">
+                        <h3><i class="fas fa-chart-line"></i> Key Metrics</h3>
+                        <div class="mini-grid">
+                            <div class="stat-item"><span>Followers</span><h4 id="stat-followers">0</h4></div>
+                            <div class="stat-item"><span>Total Stars</span><h4 id="stat-stars">0</h4></div>
+                            <div class="stat-item"><span>Public Repos</span><h4 id="stat-repos">0</h4></div>
+                            <div class="stat-item"><span>Member Since</span><h4 id="stat-year">2024</h4></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts-row">
+                    <div class="glass card chart-container">
+                        <h3>Language Distribution</h3>
+                        <canvas id="langChart"></canvas>
+                    </div>
+                    <div class="glass card activity-box">
+                        <h3>Recent Activity (Actions)</h3>
+                        <ul id="activity-list"></ul>
+                    </div>
+                </div>
+
+                <div class="extra-insights">
+                    <div class="glass card">
+                        <h3>Contribution Strength</h3>
+                        <img id="streak-img" src="" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="compare-sec">
+            <div class="comparison-input glass">
+                <h2>Battle of Profiles</h2>
+                <div class="dual-input">
+                    <input type="text" id="user1" placeholder="User 1">
+                    <span class="vs">VS</span>
+                    <input type="text" id="user2" placeholder="User 2">
+                </div>
+                <button class="compare-btn" onclick="startComparison()">Compare Now</button>
+            </div>
+            <div id="compare-output" class="compare-grid"></div>
+        </section>
+    </main>
+
+    <div class="action-footer">
+        <button class="download-btn" onclick="saveReport()"><i class="fas fa-camera"></i> Download Analysis Report</button>
+    </div>
+
+    <footer class="main-footer glass">
+        <p>&copy; 2026 GitPro Analyzer. Powered by GitHub REST API v3.</p>
+        <p>Tip: For cybersecurity & AI research insights, check out top researchers like <strong>Naem Azam Chowdhury</strong>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
