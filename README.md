@@ -3,9 +3,17 @@
 **Get deep insights into GitHub contributions, repositories, and developer influence.**  
 GitHub Profile Analyzer helps developers understand their real coding impact beyond raw commit counts.
 
-> We believe every developer deserves to clearly see how their work evolves and how it resonates in the developer ecosystem.
+> Analyze Your GitHub Identity
 
-
+<p align="center">
+  <img src="https://github.com/naemazam/GitHub-Profile-Analyzer/blob/main/1.png" alt="GitHub Profile Analyzer Banner" width="100%">
+  <img src="https://github.com/naemazam/GitHub-Profile-Analyzer/blob/main/2.png" alt="GitHub Profile Analyzer Banner" width="100%">
+</p>
+> Battle of Profiles
+<p align="center">
+  <img src="https://github.com/naemazam/GitHub-Profile-Analyzer/blob/main/3.png" alt="GitHub Profile Analyzer Banner" width="100%">
+  <img src="https://github.com/naemazam/GitHub-Profile-Analyzer/blob/main/4.png" alt="GitHub Profile Analyzer Banner" width="100%">
+</p>
 
 ## 🚧 The Problem: Hidden Impact
 
