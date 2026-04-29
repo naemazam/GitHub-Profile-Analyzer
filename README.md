@@ -13,6 +13,7 @@ GitHub Profile Analyzer helps developers understand their real coding impact bey
 <p align="center">
   <img src="https://github.com/naemazam/GitHub-Profile-Analyzer/blob/main/3.png" alt="GitHub Profile Analyzer Banner" width="100%">
   <img src="https://github.com/naemazam/GitHub-Profile-Analyzer/blob/main/4.png" alt="GitHub Profile Analyzer Banner" width="100%">
+  <img src="https://github.com/naemazam/GitHub-Profile-Analyzer/blob/main/5.png" alt="GitHub Profile Analyzer Banner" width="100%">
 </p>
 
 ## 🚧 The Problem: Hidden Impact
